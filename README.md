@@ -1,98 +1,202 @@
+<h1 align="center">Blog Pessoal Backend</h1>
+
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+  Backend da aplicação <strong>Blog Pessoal</strong>, desenvolvido com <strong>NestJS</strong>,
+  com autenticação via <strong>JWT</strong>, criptografia de senhas com <strong>bcrypt</strong>,
+  documentação com <strong>Swagger</strong> e persistência de dados com <strong>TypeORM</strong>.
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+<p align="center">
+  <img alt="NestJS" src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" />
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img alt="TypeORM" src="https://img.shields.io/badge/TypeORM-E83524?style=for-the-badge" />
+  <img alt="JWT" src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
+  <img alt="Swagger" src="https://img.shields.io/badge/Swagger-85EA2D?style=for-the-badge&logo=swagger&logoColor=black" />
+  <img alt="MySQL" src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+<hr />
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<h2>Sobre o projeto</h2>
 
-## Project setup
+<p>
+  O <strong> Blog Pessoal Backend</strong> é uma API REST desenvolvida para sustentar a aplicação de blog pessoal,
+  oferecendo recursos de autenticação, gerenciamento de usuários, postagens e temas.
+</p>
 
-```bash
-$ npm install
-```
+<p>
+  O projeto foi construído com foco em arquitetura modular, organização em camadas, relacionamento entre entidades
+  e proteção de rotas autenticadas. A aplicação utiliza JWT para controle de acesso, bcrypt para criptografia de senhas
+  e Swagger para documentação da API.
+</p>
 
-## Compile and run the project
+<hr />
 
-```bash
-# development
-$ npm run start
+<h2> Objetivos do projeto</h2>
 
-# watch mode
-$ npm run start:dev
+<ul>
+  <li>Construir uma API REST com NestJS</li>
+  <li>Praticar autenticação com e-mail e senha</li>
+  <li>Aplicar segurança com JWT e bcrypt</li>
+  <li>Trabalhar relacionamento entre entidades com TypeORM</li>
+  <li>Documentar endpoints com Swagger</li>
+  <li>Estruturar o backend de forma modular e escalável</li>
+</ul>
 
-# production mode
-$ npm run start:prod
-```
+<hr />
 
-## Run tests
+<h2> Tecnologias Utilizadas</h2>
 
-```bash
-# unit tests
-$ npm run test
+<ul>
+  <li>NestJS</li>
+  <li>TypeScript</li>
+  <li>TypeORM</li>
+  <li>JWT</li>
+  <li>Passport</li>
+  <li>bcrypt</li>
+  <li>Swagger</li>
+  <li>class-validator</li>
+  <li>class-transformer</li>
+  <li>MySQL</li>
+</ul>
 
-# e2e tests
-$ npm run test:e2e
+<hr />
 
-# test coverage
-$ npm run test:cov
-```
+<h2> Módulos da aplicação</h2>
 
-## Deployment
+<ul>
+  <li><strong>Usuários</strong> → cadastro e gerenciamento de usuários</li>
+  <li><strong>Autenticação</strong> → login com e-mail e senha, geração e validação de token JWT</li>
+  <li><strong>Postagens</strong> → criação, listagem, edição e exclusão de postagens</li>
+  <li><strong>Temas</strong> → criação e listagem de temas/categorias para organização das postagens</li>
+</ul>
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+<hr />
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+<h2> Autenticação e segurança</h2>
 
-```bash
-$ npm install -g @nestjs/mau
-$ mau deploy
-```
+<p>
+  A autenticação da aplicação é realizada com <strong>e-mail e senha</strong>.
+  Após a validação das credenciais, o sistema gera um <strong>token JWT</strong>,
+  utilizado para proteger rotas autenticadas da API.
+</p>
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+<ul>
+  <li>Autenticação com e-mail e senha</li>
+  <li>Proteção de rotas com guard JWT</li>
+  <li>Criptografia de senha com <code>bcrypt</code></li>
+  <li>Uso de <code>Passport</code> e <code>passport-jwt</code></li>
+</ul>
 
-## Resources
+<hr />
 
-Check out a few resources that may come in handy when working with NestJS:
+<h2> Entidades e relacionamentos</h2>
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+<ul>
+  <li>Um <strong>usuário</strong> pode criar várias <strong>postagens</strong></li>
+  <li>Uma <strong>postagem</strong> pertence a um único <strong>tema</strong></li>
+  <li>Um <strong>tema</strong> pode estar relacionado a várias <strong>postagens</strong></li>
+</ul>
 
-## Support
+<p><strong>Resumo dos relacionamentos:</strong></p>
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+<ul>
+  <li><code>Usuario 1:N Postagem</code></li>
+  <li><code>Tema 1:N Postagem</code></li>
+</ul>
 
-## Stay in touch
+<hr />
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+<h2> Funcionalidades</h2>
 
-## License
+<ul>
+  <li>Cadastrar usuário</li>
+  <li>Autenticar usuário</li>
+  <li>Criar postagens</li>
+  <li>Listar postagens</li>
+  <li>Editar postagens</li>
+  <li>Excluir postagens</li>
+  <li>Criar temas</li>
+  <li>Listar temas</li>
+</ul>
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+<hr />
+
+<h2> Como executar o projeto localmente</h2>
+
+<ol>
+  <li>Clone este repositório</li>
+</ol>
+
+<pre><code>git clone https://github.com/alissasousadev/personal-blog-backend.git</code></pre>
+
+<ol start="2">
+  <li>Acesse a pasta do projeto</li>
+</ol>
+
+<pre><code>cd personal-blog-backend</code></pre>
+
+<ol start="3">
+  <li>Instale as dependências</li>
+</ol>
+
+<pre><code>npm install</code></pre>
+
+<ol start="4">
+  <li>Execute o projeto em ambiente de desenvolvimento</li>
+</ol>
+
+<pre><code>npm run start:dev</code></pre>
+
+<ol start="5">
+<p>
+  A API ficará disponível localmente em uma porta configurada no projeto, geralmente:
+</p>
+</ol>
+
+<pre><code>http://localhost:3000</code></pre>
+
+<hr />
+
+
+<h2> Documentação da API</h2>
+
+<p>
+  A documentação dos endpoints foi construída com <strong>Swagger</strong>,
+  facilitando testes e visualização das rotas disponíveis.
+</p>
+
+<pre><code>https://blogpessoal-zypu.onrender.com/swagger</code></pre>
+
+<hr />
+
+<h2> Deploy</h2>
+
+<p>
+  A API possui publicação online para fins de teste e demonstração.
+</p>
+
+<pre><code>https://blogpessoal-zypu.onrender.com</code></pre>
+
+<hr />
+
+<h2> Aprendizados aplicados</h2>
+
+<ul>
+  <li>Construção de API REST com NestJS</li>
+  <li>Autenticação com JWT</li>
+  <li>Criptografia de senhas com bcrypt</li>
+  <li>Relacionamentos entre entidades com TypeORM</li>
+  <li>Validação de dados com class-validator</li>
+  <li>Documentação de API com Swagger</li>
+  <li>Estruturação modular de backend</li>
+</ul>
+
+<hr />
+<div align="center">
+<p>
+  <em>
+  Projeto desenvolvido como prática de backend no bootcamp da Generation.
+  </em>
+</p>
+</div>
